@@ -16,7 +16,7 @@ phases:
       - echo Pushing the Docker image to Amazon ECR...
       - docker push 792619331049.dkr.ecr.us-east-2.amazonaws.com/2048-game-repo
       - echo Creating imagedefinitions.json file for ECS deployment...
-      - echo '[{"name":"2048-container","imageUri":"792619331049.dkr.ecr.us-east-2.amazonaws.com/2048-game-repos"}]' > imagedefinitions.json
+      - echo '[{"name":"2048-container","imageUri":"792619331049.dkr.ecr.us-east-2.amazonaws.com/2048-game-repo"}]' > imagedefinitions.json
 artifacts:
   files:
     - imagedefinitions.json
